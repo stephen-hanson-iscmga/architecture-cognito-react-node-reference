@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap");
+body, html {
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  overflow: hidden;
+}
+
+.log-page-bg {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Change background image here */
+  background-image: url("../../images/landing/splash-bg.jpg");
+}
+
+.log-page-overlay {
+  width: 50%;
+  height: 100%;
+  left: 0;
+  z-index: 3;
+  position: fixed;
+  padding: 50px 100px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* Change overlay color here */
+  background-color: #333333;
+}
+
+@media only screen and (min-width: 2000px) {
+  .log-page-overlay {
+    padding: 200px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .log-page-overlay {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .log-page-overlay {
+    padding: 15px;
+    width: 100%;
+  }
+}
+.log-page-center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 1700px) {
+  .log-page-center {
+    height: 45vh;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .log-page-center {
+    height: 80vh;
+  }
+}
+.log-page-center h1 {
+  margin-top: 100px;
+  padding: 0;
+  /*color: $primary-color;*/
+  font-family: "Montserrat";
+  font-size: 60px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  /* Right Side of page font color */
+  color: #000000;
+}
+
+.log-page-center span {
+  font-size: 35px;
+  font-weight: 300;
+  color: #000000;
+  text-align: center;
+}
+
+.log-page-overlay p {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 200;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .log-page-overlay p {
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+}
+.log-page-overlay a {
+  color: #fff !important;
+  font-weight: 200;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+.log-page-overlay-logo {
+  height: 55px;
+  /* change logo width here */
+}
+
+div#fixed-logo p {
+  font-family: "Montserrat";
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 55.7143px;
+  margin-left: 0;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 100px;
+}
+
+.log-page-overlay .form-control {
+  height: 64px;
+  padding: 21px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: transparent;
+  margin-top: 35px;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  /* change input border color here */
+  border: 1px solid #fff;
+}
+
+/* change input placeholder text color here */
+.log-page-overlay .form-control::-webkit-input-placeholder {
+  color: white;
+}
+
+/* WebKit, Blink, Edge */
+.log-page-overlay .form-control:-moz-placeholder {
+  color: white;
+}
+
+/* Mozilla Firefox 4 to 18 */
+.log-page-overlay .form-control::-moz-placeholder {
+  color: white;
+}
+
+/* Mozilla Firefox 19+ */
+.log-page-overlay .form-control:-ms-input-placeholder {
+  color: white;
+}
+
+/* Internet Explorer 10-11 */
+.log-page-overlay .form-control::-ms-input-placeholder {
+  color: white;
+}
+
+/* Microsoft Edge */
+.log-page-overlay .btn {
+  display: block;
+  padding: 15px 0px;
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  transition: 0.3s;
+  /* change button background color here */
+  background: #5ae2e4 !important;
+  /* change button font color here */
+  color: #000000 !important;
+}
+
+.log-page-overlay .btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.log-page-m {
+  /* this is a special margin for the password reset page */
+  margin-bottom: 35px;
+}
+
+.form-group {
+  margin: 10px;
+}
+
+#slogan {
+  margin: 0;
+  font-family: "Montserrat";
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  color: #000000;
+  text-transform: none;
+}
+
+.log-page-overlay p {
+  margin: 0;
+  font-family: "Montserrat";
+  font-size: 32px;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+#loginForm {
+  height: 10vh;
+}
+
+.alert-danger {
+  margin-top: 5%;
+}
+
+@media (max-width: 1600px) {
+  .log-page-bg {
+    background-size: 900px 600px !important;
+  }
+
+  .log-page-center h1 {
+    font-size: 45px !important;
+    margin-right: 150px;
+    margin-top: 100px;
+  }
+
+  .log-page-center span {
+    font-size: 30px !important;
+  }
+}
+@media (min-width: 1601px) {
+  .log-page-bg {
+    background-size: 1200px 700px !important;
+  }
+
+  .log-page-center h1 {
+    font-size: 55px !important;
+    margin-right: 150px;
+    margin-top: 100px;
+  }
+
+  .log-page-center span {
+    font-size: 30px !important;
+  }
+}
+.get-appointed {
+  margin-top: 10%;
+}
+.get-appointed a {
+  text-decoration: none;
+}
